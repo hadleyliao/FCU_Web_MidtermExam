@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 設定文檔的字符編碼為 UTF-8，這樣可以支援多語言字符，避免亂碼問題 -->
+  <meta charset="UTF-8">
+
+  <!-- 頁面標題，會顯示在瀏覽器標籤上 -->
+  <title>寶可夢圖鑑</title>
+
+  <!-- 引入外部的 CSS 文件 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 控制圖片篩選的按鈕區塊 -->
+<div class="buttons">
+  <!-- 顯示所有圖片 -->
+  <button data-type="all">全部</button>
+  <!-- 顯示一般類型的圖片 -->
+  <button data-type="normal">一般</button>
+  <!-- 顯示水類型的圖片 -->
+  <button data-type="water">水</button>
+  <!-- 顯示火類型的圖片 -->
+  <button data-type="fire">火</button>
+  <!-- 顯示草類型的圖片 -->
+  <button data-type="grass">草</button>
+  <!-- 顯示雷類型的圖片 -->
+  <button data-type="electric">雷</button>
+</div>
+
+<!-- 圖片展示區 -->
+<div class="gallery">
+  <!-- 一般類型寶可夢圖片 -->
+  <img src="img/normal/0039.png" alt="胖丁" title="胖丁" class="normal">
+  <img src="img/normal/0052.png" alt="喵喵" title="喵喵" class="normal">
+  <img src="img/normal/0113.png" alt="吉利蛋" title="吉利蛋" class="normal">
+  <img src="img/normal/0132.png" alt="百變怪" title="百變怪" class="normal">
+  <img src="img/normal/0133.png" alt="伊布" title="伊布" class="normal">
+  <img src="img/normal/0143.png" alt="卡比獸" title="卡比獸" class="normal">
+
+  <!-- 水類型寶可夢圖片 -->
+  <img src="img/water/0007.png" alt="傑尼龜" title="傑尼龜" class="water">
+  <img src="img/water/0116.png" alt="墨海馬" title="墨海馬" class="water">
+  <img src="img/water/0129.png" alt="鯉魚王" title="鯉魚王" class="water">
+  <img src="img/water/0134.png" alt="水伊布" title="水伊布" class="water">
+
+  <!-- 火類型寶可夢圖片 -->
+  <img src="img/fire/0004.png" alt="小火龍" title="小火龍" class="fire">
+  <img src="img/fire/0006.png" alt="噴火龍" title="噴火龍" class="fire">
+  <img src="img/fire/0136.png" alt="火伊布" title="火伊布" class="fire">
+  <img src="img/fire/0146.png" alt="火焰鳥" title="火焰鳥" class="fire">
+
+  <!-- 草類型寶可夢圖片 -->
+  <img src="img/grass/0002.png" alt="妙蛙草" title="妙蛙草" class="grass">
+  <img src="img/grass/0045.png" alt="霸王花" title="霸王花" class="grass">
+  <img src="img/grass/0470.png" alt="葉伊布" title="葉伊布" class="grass">
+  <img src="img/grass/0548.png" alt="百合根娃娃" title="百合根娃娃" class="grass">
+
+  <!-- 雷類型寶可夢圖片 -->
+  <img src="img/electric/0025.png" alt="皮卡丘" title="⚡皮卡丘⚡" class="electric">
+  <img src="img/electric/0026.png" alt="雷丘" title="雷丘" class="electric">
+  <img src="img/electric/0135.png" alt="雷伊布" title="雷伊布" class="electric">
+  <img src="img/electric/0172.png" alt="皮卡" title="皮卡" class="electric">
+</div>
+
+<!-- 引入外部的 JavaScript 文件 -->
+<script src="script.js"></script>
+</body>
+</html>

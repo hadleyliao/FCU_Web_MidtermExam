@@ -1,0 +1,81 @@
+/* 設定整體網頁的基本樣式
+包含字體、對齊方式、背景顏色與上邊距 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f8f8f8;
+}
+
+/* 標題樣式 */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 倒數時間顯示區樣式 */
+#countdown {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #444;
+}
+
+/* 控制區排版 */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* 控制區文字標籤 */
+label {
+    font-size: 1em;
+    color: #333;
+}
+
+/* 輸入框樣式 */
+input[type="text"] {
+    padding: 8px;
+    font-size: 1em;
+    width: 220px;
+}
+
+/* 通用按鈕樣式 */
+button {
+    padding: 8px 20px;
+    margin-left: 8px;
+    font-size: 16px;
+    border: 1px solid #999;   /* 加上灰色邊框 */
+    border-radius: 4px;
+    background-color: #f2f2f2; /* 淺灰背景 */
+    color: #333;              /* 文字顏色 */
+    cursor: pointer;
+}
+
+/* 滑過按鈕顏色加深的變化 */
+button:hover {
+    background-color: #cccccc;
+}
+
+/* 日期格子：設定為方形並垂直置中 */
+.flatpickr-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    line-height: 1;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Flatpickr 整體樣式微調 */
+.flatpickr-calendar {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}

@@ -1,0 +1,96 @@
+/* =========【基本樣式】========= */
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* =========【按鈕區塊】========= */
+.buttons {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* =========【按鈕樣式設定】========= */
+.buttons button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: #D7D7D7;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* =========【按鈕懸停時的樣式】========= */
+.buttons button:hover {
+    background-color: #0EB087;
+    color: white;
+}
+
+/* =========【✅ 被選中時的樣式】========= */
+.buttons button.active {
+    background-color: #0EB087;
+    color: white;
+}
+
+/* =========【圖片展示區】========= */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* =========【圖片樣式 + 效果】========= */
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* =========【圖片懸停時的樣式】========= */
+.gallery img:hover {
+    transform: scale(1.2);
+    box-shadow: none;
+}
+
+/* =========【隱藏圖片】========= */
+.hidden {
+    display: none;
+}
+
+/* =========【響應式】========= */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .gallery {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+}

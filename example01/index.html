@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>計時器</title>
+    <!-- 引入外部 CSS 樣式檔 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Flatpickr 日期時間選擇器的 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+<!-- 頁面標題 -->
+<h1>計時器</h1>
+
+<!-- 顯示倒數計時的區塊 -->
+<div id="countdown">00:00:00</div>
+
+<!-- 控制區塊：標籤、輸入欄位、按鈕 -->
+<div class="controls">
+
+    <!-- 標籤：提示使用者輸入目標時間 -->
+    <label for="datetime">設定目標日期及時間：</label>
+
+    <!-- 輸入框：使用者輸入或選擇目標時間 -->
+    <!-- 不使用 type="datetime-local"，以便使用 Flatpickr 插件 -->
+    <input id="datetime" placeholder="yyyy-mm-dd --:--  --">
+
+    <!-- 按鈕：開始/暫停/繼續倒數計時 -->
+    <button id="startBtn">開始</button>
+
+    <!-- 按鈕：重置倒數計時 -->
+    <button id="resetBtn">重置</button>
+</div>
+
+<!-- 引入 Flatpickr 的 JavaScript 程式碼 -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<!-- 引入自己的倒數計時 JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
