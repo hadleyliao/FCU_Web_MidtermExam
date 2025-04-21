@@ -17,8 +17,17 @@ h1 {
 /* 倒數時間顯示區樣式 */
 #countdown {
     font-size: 3em;
-    margin: 20px 0;
+    margin: 30px 0;
+    padding: 10px 0;
     color: #444;
+}
+
+#countdown, #timer {
+    font-size: 64px;   /* 放大倒數計時文字 */
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    margin: 20px 0;
 }
 
 /* 控制區排版 */
@@ -28,6 +37,8 @@ h1 {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 600px;
 }
 
 /* 控制區文字標籤 */
@@ -41,6 +52,9 @@ input[type="text"] {
     padding: 8px;
     font-size: 1em;
     width: 220px;
+    border: 1px solid #ccc;  /* 加上明確邊框 */
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 /* 通用按鈕樣式 */
