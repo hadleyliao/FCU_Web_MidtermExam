@@ -4,6 +4,11 @@ body {
     padding: 30px;
     margin: 0;
     box-sizing: border-box;
+    /*=========【背景圖】=========*/
+    background-image: url('img/pokemon-bg.png');    /* bg圖片路徑 */
+    background-repeat: repeat;
+    background-size: 300px;                         /* 使用縮小背景圖像素大小 */
+    background-position: top left;                  /* 從左上開始鋪 */
 }
 
 /* =========【按鈕區塊】========= */
@@ -33,6 +38,7 @@ body {
     color: white;
 }
 
+
 /* =========【✅ 被選中時的樣式】========= */
 .buttons button.active {
     background-color: #0EB087;
@@ -47,8 +53,12 @@ body {
     gap: 40px;
 }
 
+
 /* =========【圖片樣式 + 效果】========= */
 .gallery img {
+    background-color: white;                    /* ⬜ 白色背景讓圖片像卡片 */
+    padding: 20px;                              /* 🧃 內距讓圖片有留白 */
+    border-radius: 20px;                        /* 💠 圓角讓卡片更可愛 */
     width: 100%;
     max-width: 300px;
     height: auto;
