@@ -1,3 +1,8 @@
+![Platform](https://img.shields.io/badge/Platform-Web-blue)
+![HTML](https://img.shields.io/badge/HTML5-orange)
+![CSS](https://img.shields.io/badge/CSS3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+
 # FCU Web Midterm Exam
 
 本專案為逢甲大學網頁設計課程期中考練習，提供兩個前端範例，協助學生熟悉 HTML、CSS 與 JavaScript 的應用。
