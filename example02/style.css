@@ -56,9 +56,9 @@ body {
 
 /* =========【圖片樣式 + 效果】========= */
 .gallery img {
-    background-color: white;                    /* ⬜ 白色背景讓圖片像卡片 */
-    padding: 20px;                              /* 🧃 內距讓圖片有留白 */
-    border-radius: 20px;                        /* 💠 圓角讓卡片更可愛 */
+    background-color: white;                    /* 白色背景讓圖片像卡片 */
+    padding: 20px;                              /* 內距讓圖片有留白 */
+    border-radius: 20px;                        /* 卡片圓角 */
     width: 100%;
     max-width: 300px;
     height: auto;
