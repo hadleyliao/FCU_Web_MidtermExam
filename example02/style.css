@@ -47,18 +47,19 @@ body {
 
 /* =========【圖片展示區】========= */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+    display: grid;                          /* 使用 CSS Grid 進行排版 */
+    grid-template-columns: repeat(5, 1fr);  /* 視窗最大時一行5張圖 */
+    gap: 40px;                              /* 圖片格子間距為40px */
+    justify-items: center;                  /* 讓每個格子內容(水平)置中 */
+    align-items: center;                    /* 讓每個格子內容(垂直)置中 */
 }
 
 
 /* =========【圖片樣式 + 效果】========= */
 .gallery img {
-    background-color: white;                    /* 白色背景讓圖片像卡片 */
-    padding: 20px;                              /* 內距讓圖片有留白 */
-    border-radius: 20px;                        /* 卡片圓角 */
+    background-color: white;                /* 白色背景讓圖片像卡片 */
+    padding: 20px;                          /* 內距讓圖片有留白 */
+    border-radius: 20px;                    /* 卡片圓角 */
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -79,28 +80,27 @@ body {
 }
 
 /* =========【響應式】========= */
-@media (max-width: 768px) {
-    .buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .buttons button {
-        width: 80%;
-        margin-bottom: 10px;
-    }
-
+@media (max-width: 1200px) {
     .gallery {
-        gap: 20px;
+        grid-template-columns: repeat(4, 1fr); /* 較大螢幕每行4張 */
+        gap: 32px;
     }
 }
-
-@media (max-width: 480px) {
-    body {
-        padding: 20px;
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 中等螢幕每行3張 */
+        gap: 24px;
     }
-
-    .gallery img {
-        max-width: 100%;
+}
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 小螢幕每行2張 */
+        gap: 16px;
+    }
+}
+@media (max-width: 400px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 超小螢幕每行1張 */
+        gap: 10px;
     }
 }
